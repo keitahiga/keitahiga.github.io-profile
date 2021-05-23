@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Hiragino Kaku Gothic ProN";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.animated {
+  opacity: 0;
+}
+/*header*/
+header {
+  text-align: center;
+  padding: 1px 0 200px;
+  background-size: cover;
+  background-image: url(images/azama_beach.jpg);
+  height: auto;
+  #header_btn{
+    position: fixed;
+    top: 1%;
+    right: 3%;
+    height: 38px;
+    width: 10px;
+    cursor: pointer;
+    z-index: 200;
+    transition: opacity 0.25s;
+    color: white;
+    opacity: 0.8;
+    &:hover{
+      opacity: 1.0;
+    }
+  }
+  #top_section {
+    h1 {
+      font-size: 70px;
+      letter-spacing: 5px;
+      margin: 250px 0 100px;
+      font-weight: bold;
+      color: white;
+      opacity: 0.8;
+      &:hover{
+        opacity: 1.0;
+      }
+    }
+  }
+}
+/*menu_contents*/
+#menu_contents{
+  display:none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  text-align: center;
+  .fa-times{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    &:hover{
+      opacity: 1.0;
+    }
+  }
+  ul{
+    margin-top: 50px;
+    li{
+      list-style: none;
+      font-size:48px;
+      padding: 32px;
+      color: white;
+      a{
+        color: white;
+      }
+    }
+  }
+}
+/*各コンテンツのtaitle*/
+.heading{
+  h2{
+  text-align: center;
+  padding: 70px 0 50px;
+  font-size: 48px;
+  }
+}
+/*(introduction,education)*/
+.small_title{
+  text-align: center;
+  margin:50px 0 15px ;
+  font-size:24px;
+}
+
+/*profile_wrapper*/
+#profile_wrapper{
+  padding: 30px 0;
+  background: rgba(0, 0, 0, 0.08);
+  #profile_image{
+    display: flex;
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+    img{
+      flex: auto;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  #introduction_section{
+    .introduction_text{
+      width: 80%;
+      font-size: 16x;
+      margin: 0 auto ;
+      p{
+        padding: 20px;
+        background-color: rgb(245, 240, 240);
+      }
+    }
+  }
+  #education_section{
+    .education_text{
+      width: 80%;
+      font-size:16px;
+      margin: 0 auto ;
+      p{
+        padding: 20px;
+        background-color: rgb(245, 240, 240);
+      }
+    }
+  }
+}
+/*my_skills_wrapper*/
+#my_skills_wrapper{
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 30px 0;
+  #my_skills{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    .skill{
+      flex: auto;
+      width: 30%;
+      img{
+        margin: 0 10px;
+      }
+      p{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+/*my_services_wrapper*/
+#my_services_wrapper{
+  background: rgba(0, 0, 0, 0.08);
+  padding: 30px 0;
+  #services{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    .service{
+      flex: auto;
+      width: 50%;
+      .service_icon{
+        img{
+          margin: 0 10px;
+          border-radius: 50%;
+        }
+        p{
+          margin: 30px 0;
+          font-size: 24px;
+          color: blue;
+        }
+      }
+      .service_text{
+        font-size: 16px;
+        margin: 0 auto 40px auto;
+        padding: 30px 50px;
+        background-color: rgb(245, 240, 240);
+        padding: 20px;
+        margin: 10px;
+      }
+    }
+  }
+  .text_contents{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
+
+/*my_works_wrapper*/
+#my_works_wrapper{
+  background-color: #ff690761;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  #works{
+    display: inline-block;
+    justify-content: center;
+    .work{
+      width: 100%;
+      img{
+        margin: 10px;
+        border-radius: 4px;
+      }
+      ul{
+        display: none;
+        li{
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+/*footer*/
+footer{
+  background-color: rgba(0, 0, 0, 0.08);
+  .text_contents{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  #contact_mail{
+    text-align: center;
+    a{
+      .fa-envelope{
+        background-color: rgba(245, 240, 240, 0.74);
+        padding: 10px 15px;
+        color: rgb(36, 35, 35);
+        &:hover{
+          background-color: rgba(11, 206, 240, 0.6);
+          color: white;
+        }
+      }
+    }
+  }
+  #Copyright{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 100px;
+  }
+}
