@@ -207,7 +207,6 @@ header {
 /*my_works_wrapper*/
 #my_works_wrapper{
   background-color: #ff690761;
-  color: white;
   padding: 30px 0;
   text-align: center;
   #works{
@@ -215,14 +214,13 @@ header {
     justify-content: center;
     .work{
       width: 100%;
+      color: white;
       img{
         margin: 10px;
         border-radius: 4px;
-      }
-      ul{
-        display: none;
-        li{
-          list-style: none;
+        opacity: 0.7;
+        &:hover{
+          opacity: 1.0;
         }
       }
     }
