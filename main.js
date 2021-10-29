@@ -1,8 +1,15 @@
-/*登録フォームのボタンクリックの動作*/
+/*「チャットを始める」ボタンをクリックした時の動作*/
 $('.signup-show').on('click',(e) => {
   $('#login').fadeIn();
 });
 
+/*各foodのボタンを押した時の動作
+$('.food-btn').on('click',(e) => {
+  $('#login').fadeIn();
+});
+*/
+
+/*登録フォームのCloseボタンをクリックした時の動作*/
 $('#close-modal').on('click',(e) => {
   $('#login').fadeOut();
 });
@@ -10,10 +17,6 @@ $('#close-modal').on('click',(e) => {
 /*各foodのボタンを押した時の動作*/
 $('#').on('click',(e) => {
   $('#login').fadeIn();
-});
-
-$('#').on('click',(e) => {
-  $('#login').fadeOut();
 });
 
 // animatedクラスの付いた要素にwaypointを登録
