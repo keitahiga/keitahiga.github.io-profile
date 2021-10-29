@@ -3,11 +3,11 @@ $('.signup-show').on('click',(e) => {
   $('#login').fadeIn();
 });
 
-/*各foodのボタンを押した時の動作
+/*各foodのボタンを押した時の動作*/
 $('.food-btn').on('click',(e) => {
   $('#login').fadeIn();
 });
-*/
+
 
 /*登録フォームのCloseボタンをクリックした時の動作*/
 $('#close-modal').on('click',(e) => {
