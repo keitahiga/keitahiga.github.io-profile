@@ -2,13 +2,13 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Keita higa's Portfolio</title>
+  <title>めんそ～れChannel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <!-- 自サイトのCSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="responsive.css">
   <!--Animate.cssのCSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
@@ -16,196 +16,78 @@
 </head>
 
 <body>
-<header>
-  <!--メニューバー-->
-  <div class = "container">
-    <a href = "#" id = "header_btn">
-      <i class="fas fa-2x fa-bars"></i>
-    </a>
+<!--ログインフォーム-->
+  <div  class = "login-modal-wrapper" id = "login">
+    <div class = "input-container">
+      <div id = "close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+      <div id = "login-form">
+        <h1>めんそ～れChannelに登録</h1>
+      <form>
+        <input type="text" id = "login-email" class = "form-group form-control" placeholder = "メールアドレス">
+        <input type="text" id = "login-password" class = "form-group form-control" placeholder = "パスワード">
 
-    <div id = "top_section">
-      <h1>KEITA HIGA'S PORTFOLIO</h1>
-    </div>
-  </div>
-</header>
+        <button type="password" id="login-password" class = "btn-primary">ログイン</button>
+        <p class="form-text">初めての方は、登録するパスワードを入力してください</p>
+      </form>
 
-<div id = "menu_contents">
-  <nav id = menu_container>
-    <div id = "close-modal">
-      <i class="fa fa-2x fa-times"></i>
-    </div>
-    <ul>
-      <li>
-        <a href = "#profile_wrapper" id = "menu_about">About</a>
-      </li>
-      <li>
-        <a href = "#my_services_wrapper" id = "menu_service">Service</a>
-      </li>
-      <li>
-        <a href = "#my_works_wrapper" id = "menu_works">Works</a>
-      </li>
-      <li>
-        <a href = "#contact_wrapper" id = "menu_contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
-</div>
-
-<div id = "profile_wrapper">
-  <div class = "container">
-    <div class = "heading">
-      <h2>ABOUT ME</h2>
-    </div>
-      <div id = "profile_image" class = "animated">
-        <img src="images/keita_higa_img.jpg" alt="my profile">
-      </div>
-    <div id = "introduction_section">
-      <div class = "small_title animated">
-        <p>INTRODUCTION</p>
-      </div>
-      <div class = "introduction_text animated">
-        <p> 初めまして。KEITAと申します。<br>
-          <br>
-          現在フロントエンドを中心に、Webサイト制作を行なっております。<br>
-          <br>
-        「<span style = "color:red;">質</span>」と「<span style = "color:red;">スピード</span>」を意識して、期待以上のものを提供させていただきます。<br>
-        <br>
-        また、クライアント様に寄り添った<span style = "color:red;">丁寧なコミュニケーション</span>を常に心がけ、 最後まで<span style = "color:red;">責任</span>を持って、仕事に取り組ませていただきます。<br>
-        </p>
-      </div>
-    </div>
-    <div id = "education_section">
-      <div class = "small_title animated">
-        <p>EDUCATION</p>
-      </div>
-      <div class = "education_text animated">
-        <p>
-          1998年：沖縄県沖縄市出身<br>
-          <br>
-          2016年：沖縄県沖縄尚学高等学校卒業<br>
-          <br>
-          2021年：琉球大学工学部工学科社会基盤デザインコース卒業<br>
-        </p>
       </div>
     </div>
   </div>
-</div>
-<div id = "my_skills_wrapper">
-  <div class = "container">
-    <div class = "heading">
-      <h2>SKILLS</h2>
+<!--header-->
+  <header>
+    <div class = "container">
+      <h2>めんそ～れChannel</h2>
+      <p>めんそ～れChannelは沖縄に来る観光客や地元の人たちが<br>肉・魚・沖縄そば・居酒屋を対象に<br>定番のお店から穴場のお店まで共有することができる掲示板サイトです。<br>
+      めんそ～れChannelでおいしいお店を探索しよう！</p>
+      <button class="signup-show btn btn-success">チャットを始める</button>
     </div>
-    <div id = "my_skills" class = "animated" >
-      <div class = "skill">
-        <img src="images/programming_language/html_img.jpg" alt="HTML">
-        <p>Level:★★★★☆</p>
+  </header>
+
+  <!--food-wrapper-->
+  <div id = "food-wrapper">
+    <div class = "container">
+      <div class = "heading">
+        <h3>-Pick up-</h3>
       </div>
-      <div class = "skill">
-        <img src="images/programming_language/css_img.jpg" alt="CSS">
-        <p>Level:★★★★☆</p>
-      </div>
-      <div class = "skill">
-        <img src="images/programming_language/Javascript_img.jpg" alt="JavaScript">
-        <p>Level:★★★★☆</p>
-      </div>
-      <div class = "skill">
-        <img src="images/programming_language/jQuery_img.jpg" alt="jQuery">
-        <p>Level:★★★★☆</p>
-      </div>
-      <div class = "skill">
-        <img src="images/programming_language/Wordpress_img.jpg" alt="WordPress">
-        <p>Level:★★★★☆</p>
+      <div id = "foods" class = "row">
+        <div class = "animated food col-lg-3 col-md-6 col-sm-12 col-12">
+            <img src = "images/niku.jpg" alt = "niku">
+            <a href = "#login" class = "food-btn" id="niku">肉</a>
+        </div>
+        <div class = "animated food col-lg-3 col-md-6 col-sm-12 col-12">
+            <img src = "images/fish.jpg" alt = "fish">
+            <a href = "#" class = "food-btn" id = "fish">魚</a>
+        </div>
+        <div class = "animated food col-lg-3 col-md-6 col-sm-12 col-12">
+            <img src = "images/soba.jpg" alt = "soba">
+            <a href = "#" class = "food-btn" id = "soba">沖縄そば</a>
+        </div>
+        <div class = "animated food col-lg-3 col-md-6 col-sm-12 col-12">
+            <img src = "images/alcohol.jpg" alt = "alcohol">
+            <a href = "#" class = "food-btn" id = "alcohol">居酒屋</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div id = "my_services_wrapper">
-  <div class = "container">
-    <div class = "heading">
-      <h2>SERVICE</h2>
-    </div>
-    <div id = "services">
-      <div class = "service">
-        <div class = "service_icon animated">
-          <img src="images/services_type/service_coding_img.jpg" alt="coding">
-          <p>コーディング</p>
-        </div>
-        <div class = "service_text animated">
-          <p>
-            LPやコーポレートサイト、ブログなど、 目的に応じた適切なコーディングを行います(レスポンシブ対応可)。
-            また、軽微なコードの修正などにも対応しています。<br>
-            <br>
-          【料金目安】<br>
-            コード修正: ¥10,000~/1p<br>
-            LP制作: ¥20,000~/1p<br>
-          </p>
-        </div>
-      </div>
-      <div class = "service">
-        <div class = "service_icon animated">
-          <img src="images/services_type/service_wordpress_img.jpg" alt="WordPress">
-          <p>WORDPRESS</p>
-        </div>
-        <div class = "service_text animated">
-          <p>
-            コーポレートサイトや個人ブログ、およびウェブマガジンなどのWordPressサイトの構築や
-            既存サイトのWordPress移行、コードの修正に対応しております。<br>
-            <br>
-            【料金目安】<br>
-            Wordpress移行: ¥100,000~<br>
-            Wordpress制作: ¥200,000~
-          </p>
-        </div>
-      </div>
-    </div>
-      <p class = "text_contents animated">※正式なお見積もりは、別途ご相談させていただきます。</p>
-  </div>
-</div>
-<div id = "my_works_wrapper">
-  <div class = "container">
-    <div class = "heading">
-      <h2>WORKS</h2>
-    </div>
-    <div id = "works">
-      <div class = "work animated">
-        <div class = "small_title ">
-          <p>私のことをよく知ってもらうためのサイトです</p>
-        </div>
-        <a href="https://keitahiga.github.io/keitahiga.github.io-profile/">
-          <img src="images/portfolio_works/my_profile_portfolio_img.jpg" alt="portfolio">
-        </a>
-      </div>
 
-      <div class = "work animated">
-        <div class = "small_title ">
-          <p>沖縄のお店を共有することができる掲示板サイトです。(静的な部分を実装)</p>
-        </div>
-        <a href="https://keitahiga.github.io/keitahiga.github.io-mensore/">
-          <img src="images/portfolio_works/mensore_portfolio_img.jpg" alt="portfolio">
-        </a>
+  <!--message-wrapper-->
+  <div id = "message-wrapper">
+    <div class = "container">
+      <div class = "heading">
+        <h4>あなたも登録して、いいお店を共有しよう！</h4>
       </div>
+      <button class="signup-show btn btn-success">チャットを始める</button>
     </div>
   </div>
-</div>
 
-<footer id = "contact_wrapper">
-  <div class = "container">
-    <div class = "heading">
-      <h2>CONTACT</h2>
-    </div>
-    <p class = "text_contents">ご依頼（ご相談）はメールよりお願い致します。</p>
-    <div id = "contact_mail">
-      <a href="mailto:keita.higa98@gmail.com?body=ご依頼/ご相談内容"　class = "gmail">
-        <i class="fas fa-5x fa-envelope"></i>
-      </a>
-    </div>
-
-    <!--コピーライト」-->
+  <!--footer-->
+  <footer>
     <div id = "Copyright">
-      <p>Copyright &copy; Keita Higa's Portfolio 2021, All Rights Reserved.</p>
+      <p>Copyright &copy; Keita, めんそ～れChannel 2021</p>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <!--Bootstrap JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome -->
