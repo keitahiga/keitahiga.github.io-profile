@@ -1,22 +1,19 @@
-/*「チャットを始める」ボタンをクリックした時の動作*/
-$('.signup-show').on('click',(e) => {
-  $('#login').fadeIn();
+/*メニューバーをクリックしたときの動作*/
+$('#header_btn').on('click',(e) => {
+	$('#menu_contents').fadeIn();
+	$('#header_btn').fadeOut();
 });
+/*メニューコンテンツを閉じるときの動作*/
 
-/*各foodのボタンを押した時の動作*/
-$('.food-btn').on('click',(e) => {
-  $('#login').fadeIn();
-});
-
-
-/*登録フォームのCloseボタンをクリックした時の動作*/
 $('#close-modal').on('click',(e) => {
-  $('#login').fadeOut();
+	$('#menu_contents').fadeOut();
+	$('#header_btn').fadeIn();
 });
 
-/*各foodのボタンを押した時の動作*/
-$('#').on('click',(e) => {
-  $('#login').fadeIn();
+/*menuボタンを押したときの各々の動作*/
+$('#menu_container li').on('click',(e) => {
+	$('#menu_contents').fadeOut();
+	$('#header_btn').fadeIn();
 });
 
 // animatedクラスの付いた要素にwaypointを登録
@@ -39,6 +36,6 @@ $('.animated').waypoint({
     }
   },
 
-  // 要素が表示範囲の20%が画面に来たらhandlerを実行
-  offset: '80%',
+  // 要素が表示範囲の30%が画面に来たらhandlerを実行
+  offset: '70%',
 });
